@@ -14,12 +14,10 @@ for i in arr:
 minVals.remove(max(minVals))        
 #print(minVals)
 
-for k in maxVals:
-    maxSum+=k
+maxSum = sum(maxVals)
 #print(maxSum)
 
-for m in minVals:
-    minSum+=m
+minSum = sum(minVals)
 #print(minSum)
 
 print(minSum, maxSum)
