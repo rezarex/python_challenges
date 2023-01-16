@@ -17,15 +17,20 @@ def MatrixSpiral(strArr):
     a=len(strArr)
     b=[]
     for i in range(a):
+        #evaluate to check if it is a valid array
         k=ast.literal_eval(strArr[i])
         b.append(k)
+
+    #take it back to strArr...
     strArr=b
     z=[]
-    i=0 #filas
-    j=0#columnas
-    m=len(strArr) #filas
-    n=len(strArr[0]) #columna
+    i=0 #start rows
+    j=0#start columns
+    m=len(strArr) #end rows
+    n=len(strArr[0]) #end columns
     c=m*n
+
+    #go right
     while (i<=(m))&(j<=(n)):
         for l in range(i,n):
             z.append(strArr[i][l])
